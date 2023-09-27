@@ -27,3 +27,6 @@ about it at the start of each recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+
+I feel that a good invariant would be something like $arr[arr.length] = arr[arr.length - 1] + arr[arr.length - 2]$ because that is just how you get fibonacci numbers. The next fibonacci number in the array would take position arr.length and it is equaled to the last 2 numbers added together. So in the array, the previous 2 entries. Whenever the recursion happens, this will always be true as if it wasn't true, then the number in the next spot of the array would not be a fibonacci, nor would it be in the correct position of the array.
